@@ -19,7 +19,7 @@ export default class TopTweets extends Component {
     }
  
     componentDidMount(){
-         axios.get('http://localhost:3001/mysql')
+         axios.get('http://35.236.58.220:3001/mysql')
          .then(res => {
              const sqlData = res.data;
              this.setState({ sqlData });
