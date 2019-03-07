@@ -14,7 +14,7 @@ export default class WorldMap extends Component {
     }
 
     componentDidMount(){
-        axios.get('http://localhost:3001/globalchart')
+        axios.get('http://35.236.58.220:3001/globalchart')
         .then(res => {
             const mapData1 = res.data;
             this.setState({ mapData1 });
