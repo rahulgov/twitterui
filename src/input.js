@@ -51,7 +51,7 @@ export default class input extends Component{
             fromdate:this.state.fromdate
           }
       
-        axios.post(`http://localhost:3002/newPython`, { location, keyword, token, todate, fromdate  })
+        axios.post(`http://35.236.58.220:3002/newPython`, { location, keyword, token, todate, fromdate  })
       .then(res => {
         console.log(res);
         console.log(res.data);
