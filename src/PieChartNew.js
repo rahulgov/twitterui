@@ -55,7 +55,7 @@ export default class PieChartNew extends Component {
     }
  
     componentDidMount(){
-         axios.get('http://35.236.58.220:3001/pythonscript')
+         axios.get('http://35.236.53.82:3001/pythonscript')
          .then(res => {
              const chart = res.data;
              this.setState({ chart });
