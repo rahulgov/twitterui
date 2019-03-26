@@ -15,7 +15,7 @@ export default class Search extends Component {
    }
 
    componentDidMount(){
-        axios.get('http://35.236.58.220:3001/pythonscript')
+        axios.get('http://35.236.53.82:3001/pythonscript')
         .then(res => {
             const results = res.data;
             this.setState({ results });
